@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Salt'n Pepper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            font-family: 'butler';
+        }
+
+        p {
+            color: rgb(197, 197, 197);
+            ;
+        }
+
+        img {
+            pointer-events: none;
+            /* z-index: 10; */
+        }
+
+        .my-btn-outline-success {
+            border: 1px solid #39a339;
+            background-color: #39a339;
+        }
+
+        .my-btn-outline-success:hover {
+            border: 1px solid #39a339;
+            background-color: transparent;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main -->
+    <div class="" style="background-color: black;" data-bs-theme="dark">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg text-light" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand order-2" href="#">
+                    <img src="https://images-beta.tossdown.com/site/65b73fb7-2706-4440-87b9-9555fcd0ba80.webp"
+                        height="60" alt="">
+                </a>
+                <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0 gap-5" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Publications</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-2 mt-md-0 mt-4 mb-md-0 mb-4">
+                        <button class="shadow-0 border-1 rounded-5 bg-transparent px-3 py-2">Get a Franchise</button>
+                        <button class="shadow-0 border-0 rounded-5 px-3 py-1 py-md-2 d-flex align-items-center gap-3"
+                            style="background-color: #ed1c24;">Order Online
+                            <div class="bg-light text-danger p-1 rounded-5">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar -->
+
+        <!-- Slider -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators" data-bs-theme="dark">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="pointer-events: none;">
+                    <img src="https://static.tossdown.com/images/04f95c5a-8a99-474d-91c1-318f5fcee704.webp"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" style="pointer-events: none;">
+                    <img src="https://static.tossdown.com/images/01413b7a-9edc-45f7-8326-6694e542c0d8.webp"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" style="pointer-events: none;">
+                    <img src="https://static.tossdown.com/images/577429c2-3b58-4be5-a56a-d1453922516f.webp"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Slider -->
+
+        <!-- Welcome Section Salt'n Pepper -->
+        <div class="container py-5">
+            <div class="text-light d-flex justify-content-center text-center flex-column align-items-center gap-1 mb-4">
+                <h1 class="fw-light mx-auto" style="">
+                    Welcome to
+                    <span style="font-family: 'futurak'; font-weight: 900; font-size: 52px; line-height: 62px;">
+                        Salt'n Pepper <br>
+                    </span>
+                    Restaurants! Our Brands
+                </h1>
+                <p>Please click our brands below for further information, reservations or to order online!</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="d-flex flex-column gap-4 align-items-center" style="width: 100%;">
+                        <div style="width: 100%; height: 150px;">
+                            <img src="https://static.tossdown.com/site/8a66dd76-03d2-4b71-8d03-cf045f0248a7.webp"
+                                class="p-4 rounded bg-light" style="width: 100%; height: 100%;"
+                                alt="Salt n Pepper Restaurant">
+                        </div>
+                        <button class="shadow-0 border border-1 rounded-5 bg-transparent px-3 py-2">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="d-flex flex-column gap-4 align-items-center" style="width: 100%;">
+                        <div style="width: 100%; height: 160px;">
+                            <img src="https://static.tossdown.com/site/9d9cb355-ac8c-404e-a608-c28242343cd1.webp"
+                                class="p-4 rounded bg-light" style="width: 100%; height: 100%;"
+                                alt="Salt n Pepper Express">
+                        </div>
+                        <button class="shadow-0 border border-1 rounded-5 bg-transparent px-3 py-2">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="d-flex flex-column gap-4 align-items-center" style="width: 100%;">
+                        <div style="width: 100%; height: 160px;">
+                            <img src="https://static.tossdown.com/site/f9238d0e-7c34-4139-a081-c57b7713628e.webp"
+                                class="p-4 rounded bg-light" style="width: 100%; height: 100%;"
+                                alt="Salt n Pepper Village">
+                        </div>
+                        <button class="shadow-0 border border-1 rounded-5 bg-transparent px-3 py-2">
+                            Reserve a Table
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="d-flex flex-column gap-4 align-items-center" style="width: 100%;">
+                        <div style="width: 100%; height: 160px;">
+                            <img src="https://static.tossdown.com/images/38f64422-c79a-4650-8df2-5668743154df.webp"
+                                class="p-4 rounded bg-light" style="width: 100%; height: 100%;"
+                                alt="Salt n Pepper Cafe">
+                        </div>
+                        <button class="shadow-0 border border-1 rounded-5 bg-transparent px-3 py-2">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Welcome Section End -->
+
+        <!-- Restaurant Franchises -->
+        <div class="py-5 text-light" data-bs-theme="dark" style="background-color: #0f0f0f;">
+            <div class=" container">
+                <!-- content -->
+                <div
+                    class="position-relative text-light d-flex justify-content-center text-center flex-column align-items-center gap-1 mb-4">
+                    <h1 class="fw-medium mx-auto" style=""><span
+                            style="font-family: 'futurak'; font-weight: 900; font-size: 52px; line-height: 62px;">
+                            Salt'n Pepper <br>
+                        </span>
+                        Restaurant Franchises
+                    </h1>
+                    <p>Each of our franchises are individually managed. For further details, kindly contact them
+                        directly.
+                    </p>
+                </div>
+                <!-- content -->
+                <!--  -->
+                <!-- section 1 -->
+                <div class="row mt-5 gap-4 gap-md-0">
+                    <div class="col-12 col-md-6">
+                        <div class="">
+                            <h3
+                                style="color: #ed1c24; letter-spacing: 5px; text-transform: uppercase; font-size: 16px; font-weight: 300;">
+                                Islamabad</h3>
+                            <h4 class="fw-bolder" style="font-size: 35px;">Salt'n Pepper <span class="fw-light"
+                                    style="font-size: 25px;">Restaurant</span></h4>
+                            <div class="d-flex gap-2 p-0 m-0 mt-4">
+                                <i class="fa-solid fa-location-dot" style="font-size: 18px;"></i>
+                                <p> Plot# 55, Shabbir Plaza, Blue Area, F-6, Islamabad</p>
+                            </div>
+                            <div class="d-flex gap-2 p-0 m-0">
+                                <i class="fa-solid fa-phone" style="font-size: 18px;"></i>
+                                <p> Ph: 051-2604904-6</p>
+                            </div>
+                            <button
+                                class="btn border-1 border-secondary py-2 px-4 mt-3 d-flex gap-2 align-items-center rounded-5">Get
+                                Directions <div class="bg-light text-danger p-1 rounded-5 px-2"><i
+                                        class="fa-solid fa-arrow-right"></i></div></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="" style="height: 350px; width: 100%;">
+                            <img src="https://images-beta.tossdown.com/site/7aba8915-02ed-46ee-bd96-1063abe072fa.webp"
+                                class="rounded-2"
+                                style="width: 100%; height: 100%; object-fit: cover; z-index: 1 !important;" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!-- section 2 -->
+                <div class="row mt-5 gap-4 gap-md-0 mt-5">
+                    <div class="col-12 col-md-6 order-1 order-md-2">
+                        <div class="">
+                            <h3
+                                style="color: #ed1c24; letter-spacing: 5px; text-transform: uppercase; font-size: 16px; font-weight: 300;">
+                                Faisalabad</h3>
+                            <h4 class="fw-bolder" style="font-size: 35px;">Salt'n Pepper <span class="fw-light"
+                                    style="font-size: 25px;">Restaurant</span></h4>
+                            <div class="d-flex gap-2 p-0 m-0 mt-4">
+                                <i class="fa-solid fa-location-dot" style="font-size: 18px;"></i>
+                                <p> 4-Kohinoor City, Faisalabad</p>
+                            </div>
+                            <div class="d-flex gap-2 p-0 m-0">
+                                <i class="fa-solid fa-phone" style="font-size: 18px;"></i>
+                                <p> Ph: 041-8711404</p>
+                            </div>
+                            <button
+                                class="btn border-1 border-secondary py-2 px-4 mt-3 d-flex gap-2 align-items-center rounded-5">Get
+                                Directions <div class="bg-light text-danger p-1 rounded-5 px-2"><i
+                                        class="fa-solid fa-arrow-right"></i></div></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-2 order-md-1">
+                        <div class="" style="height: 350px; width: 100%;">
+                            <img src="https://images-beta.tossdown.com/site/11771dbf-36a1-4684-a55e-18af61e0f77c.webp"
+                                class="rounded-2" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!-- section 3 -->
+                <div class="row mt-5 gap-4 gap-md-0">
+                    <div class="col-12 col-md-6 ">
+                        <div class="">
+                            <h3
+                                style="color: #ed1c24; letter-spacing: 5px; text-transform: uppercase; font-size: 16px; font-weight: 300;">
+                                Bahawalpur</h3>
+                            <h4 class="fw-bolder" style="font-size: 35px;">Salt'n Pepper <span class="fw-light"
+                                    style="font-size: 25px;">Restaurant</span></h4>
+                            <div class="d-flex gap-2 p-0 m-0 mt-4">
+                                <i class="fa-solid fa-location-dot" style="font-size: 18px;"></i>
+                                <p> D.C Chowk, opposite Commissioner House, Bahawalpur</p>
+                            </div>
+                            <div class="d-flex gap-2 p-0 m-0">
+                                <i class="fa-solid fa-phone" style="font-size: 18px;"></i>
+                                <p> Ph: 062-2740271-2</p>
+                            </div>
+                            <button
+                                class="btn border-1 border-secondary py-2 px-4 mt-3 d-flex gap-2 align-items-center rounded-5">Get
+                                Directions <div class="bg-light text-danger p-1 rounded-5 px-2"><i
+                                        class="fa-solid fa-arrow-right"></i></div></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="" style="height: 350px; width: 100%;">
+                            <img src="https://images-beta.tossdown.com/site/b2f78afe-11e4-4af5-8aef-cff9c2908614.webp"
+                                class="rounded-2" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+        <!-- Restaurant Franchises -->
+        <!-- Express Franchises -->
+        <div class="py-5 text-light" data-bs-theme="dark" style="background-color: #0f0f0f;">
+            <div class=" container">
+                <!-- content -->
+                <div
+                    class="position-relative text-light d-flex justify-content-center text-center flex-column align-items-center gap-1 mb-4">
+                    <h1 class="fw-medium mx-auto" style=""><span
+                            style="font-family: 'futurak'; font-weight: 900; font-size: 52px; line-height: 62px;">
+                            Salt'n Pepper <br>
+                        </span>
+                        Express Franchises
+                    </h1>
+                </div>
+                <!-- content -->
+                <!--  -->
+                <!-- section 1 -->
+                <div class="row mt-5 gap-4 gap-md-0">
+                    <div class="col-12 col-md-4">
+                        <div class="" style="height: 250px; width: 100%;">
+                            <img src="https://static.tossdown.com/images/0f3ddba0-18a0-450e-af77-188aeb795934.webp"
+                                class="rounded-2"
+                                style="width: 100%; height: 100%; object-fit: cover; z-index: 1 !important;" alt="">
+                        </div>
+                        <div class="-my-content mt-3 text-center">
+                            <h3
+                                style="color: #ed1c24; letter-spacing: 5px; text-transform: uppercase; font-size: 14px; font-weight: 300;">
+                                sargodha</h3>
+                            <h4 class="fw-bolder" style="font-size: 25px;">Salt'n Pepper <span class="fw-light"
+                                    style="font-size: 20px;">Express</span></h4>
+                            <div class="d-flex align-items-center flex-column">
+                                <div class="d-flex gap-2 p-0 m-0 mt-2 text-center">
+                                    <i class="fa-solid fa-location-dot" style="font-size: 14px;"></i>
+                                    <p> Opposite Sargodha Arts Council Babar Road</p>
+                                </div>
+                                <div class="d-flex gap-2 p-0 m-0 text-center">
+                                    <i class="fa-solid fa-phone" style="font-size: 14px;"></i>
+                                    <p> Ph: 048-3725500</p>
+                                </div>
+                                <button
+                                    class="btn border-1 border-secondary py-2 px-4 mt-3 d-flex gap-2 align-items-center rounded-5">Get
+                                    Directions <div class="bg-light text-danger p-1 rounded-5 px-2"><i
+                                            class="fa-solid fa-arrow-right"></i></div></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="" style="height: 250px; width: 100%;">
+                            <img src="https://static.tossdown.com/images/171bb884-f60a-4d94-a0b9-78204522564e.webp"
+                                class="rounded-2"
+                                style="width: 100%; height: 100%; object-fit: cover; z-index: 1 !important;" alt="">
+                        </div>
+                        <div class="-my-content mt-3 text-center">
+                            <h3
+                                style="color: #ed1c24; letter-spacing: 5px; text-transform: uppercase; font-size: 14px; font-weight: 300;">
+                                Jhelum</h3>
+                            <h4 class="fw-bolder" style="font-size: 25px;">Salt'n Pepper <span class="fw-light"
+                                    style="font-size: 20px;">Express</span></h4>
+                            <div class="d-flex align-items-center flex-column">
+                                <div class="d-flex gap-2 p-0 m-0 mt-2 text-center">
+                                    <i class="fa-solid fa-location-dot" style="font-size: 14px;"></i>
+                                    <p> Opposite Dancing Fountain Gallery 2 Citi Housing Jhelum,</p>
+                                </div>
+                                <div class="d-flex gap-2 p-0 m-0 text-center">
+                                    <i class="fa-solid fa-phone" style="font-size: 14px;"></i>
+                                    <p> Ph: 0307-7675555</p>
+                                </div>
+                                <button
+                                    class="btn border-1 border-secondary py-2 px-4 mt-3 d-flex gap-2 align-items-center rounded-5">Get
+                                    Directions <div class="bg-light text-danger p-1 rounded-5 px-2"><i
+                                            class="fa-solid fa-arrow-right"></i></div></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="" style="height: 250px; width: 100%;">
+                            <img src="https://static.tossdown.com/images/31b37f0c-5936-4232-a55e-8042c2656526.webp"
+                                class="rounded-2"
+                                style="width: 100%; height: 100%; object-fit: cover; z-index: 1 !important;" alt="">
+                        </div>
+                        <div class="-my-content mt-3 text-center">
+                            <h3
+                                style="color: #ed1c24; letter-spacing: 5px; text-transform: uppercase; font-size: 14px; font-weight: 300;">
+                                Faisal Town</h3>
+                            <h4 class="fw-bolder" style="font-size: 25px;">Salt'n Pepper <span class="fw-light"
+                                    style="font-size: 20px;">Express</span></h4>
+                            <div class="d-flex align-items-center flex-column">
+                                <div class="d-flex gap-2 p-0 m-0 mt-2 text-center">
+                                    <i class="fa-solid fa-location-dot" style="font-size: 14px;"></i>
+                                    <p>34-C Abul Hassan Isfahani Rd, Faisal Town,Lahore</p>
+                                </div>
+                                <div class="d-flex gap-2 p-0 m-0 text-center">
+                                    <i class="fa-solid fa-phone" style="font-size: 14px;"></i>
+                                    <p> Ph: 048-3725500</p>
+                                </div>
+                                <button
+                                    class="btn border-1 border-secondary py-2 px-4 mt-3 d-flex gap-2 align-items-center rounded-5">Get
+                                    Directions <div class="bg-light text-danger p-1 rounded-5 px-2"><i
+                                            class="fa-solid fa-arrow-right"></i></div></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!-- section 2 -->
+                <div class="row mt-5 gap-4 gap-md-0">
+                    <div class="col-12 col-md-4">
+                        <div class="" style="height: 250px; width: 100%;">
+                            <img src="https://static.tossdown.com/images/2b5877b5-ca49-4161-a30e-752ddce91595.webp"
+                                class="rounded-2"
+                                style="width: 100%; height: 100%; object-fit: cover; z-index: 1 !important;" alt="">
+                        </div>
+                        <div class="-my-content mt-3 text-center">
+                            <h3
+                                style="color: #ed1c24; letter-spacing: 5px; text-transform: uppercase; font-size: 14px; font-weight: 300;">
+                                DHA</h3>
+                            <h4 class="fw-bolder" style="font-size: 25px;">Salt'n Pepper <span class="fw-light"
+                                    style="font-size: 20px;">Express</span></h4>
+                            <div class="d-flex align-items-center flex-column">
+                                <div class="d-flex gap-2 p-0 m-0 mt-2 text-center">
+                                    <i class="fa-solid fa-location-dot" style="font-size: 14px;"></i>
+                                    <p> 93-Y Phase III, DHA,Lahore</p>
+                                </div>
+                                <div class="d-flex gap-2 p-0 m-0 text-center">
+                                    <i class="fa-solid fa-phone" style="font-size: 14px;"></i>
+                                    <p> Ph: 042-111-100-678</p>
+                                </div>
+                                <button
+                                    class="btn border-1 border-secondary py-2 px-4 mt-3 d-flex gap-2 align-items-center rounded-5">Get
+                                    Directions <div class="bg-light text-danger p-1 rounded-5 px-2"><i
+                                            class="fa-solid fa-arrow-right"></i></div></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="" style="height: 250px; width: 100%;">
+                            <img src="https://static.tossdown.com/images/0cdc03af-9732-4d0c-9174-f4e66953b3c8.webp"
+                                class="rounded-2"
+                                style="width: 100%; height: 100%; object-fit: cover; z-index: 1 !important;" alt="">
+                        </div>
+                        <div class="-my-content mt-3 text-center">
+                            <h3
+                                style="color: #ed1c24; letter-spacing: 5px; text-transform: uppercase; font-size: 14px; font-weight: 300;">
+                                Bahria Town</h3>
+                            <h4 class="fw-bolder" style="font-size: 25px;">Salt'n Pepper <span class="fw-light"
+                                    style="font-size: 20px;">Express</span></h4>
+                            <div class="d-flex align-items-center flex-column">
+                                <div class="d-flex gap-2 p-0 m-0 mt-2 text-center">
+                                    <i class="fa-solid fa-location-dot" style="font-size: 14px;"></i>
+                                    <p> Arwa Heights Building 19 Nishtar Block, Sector E, Bahria Town Lahore</p>
+                                </div>
+                                <div class="d-flex gap-2 p-0 m-0 text-center">
+                                    <i class="fa-solid fa-phone" style="font-size: 14px;"></i>
+                                    <p> Ph: 042-111-100-678</p>
+                                </div>
+                                <button
+                                    class="btn border-1 border-secondary py-2 px-4 mt-3 d-flex gap-2 align-items-center rounded-5">Get
+                                    Directions <div class="bg-light text-danger p-1 rounded-5 px-2"><i
+                                            class="fa-solid fa-arrow-right"></i></div></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="" style="height: 250px; width: 100%;">
+                            <img src="https://static.tossdown.com/images/a860f757-114b-4453-ba86-f7b24dc0f24e.webp"
+                                class="rounded-2"
+                                style="width: 100%; height: 100%; object-fit: cover; z-index: 1 !important;" alt="">
+                        </div>
+                        <div class="-my-content mt-3 text-center">
+                            <h3
+                                style="color: #ed1c24; letter-spacing: 5px; text-transform: uppercase; font-size: 14px; font-weight: 300;">
+                                Gujar Khan</h3>
+                            <h4 class="fw-bolder" style="font-size: 25px;">Salt'n Pepper <span class="fw-light"
+                                    style="font-size: 20px;">Express</span></h4>
+                            <div class="d-flex align-items-center flex-column">
+                                <div class="d-flex gap-2 p-0 m-0 mt-2 text-center">
+                                    <i class="fa-solid fa-location-dot" style="font-size: 14px;"></i>
+                                    <p> New Metro City Gujar Khan</p>
+                                </div>
+                                <div class="d-flex gap-2 p-0 m-0 text-center">
+                                    <i class="fa-solid fa-phone" style="font-size: 14px;"></i>
+                                    <p> Ph: 0321-1114965</p>
+                                </div>
+                                <button
+                                    class="btn border-1 border-secondary py-2 px-4 mt-3 d-flex gap-2 align-items-center rounded-5">Get
+                                    Directions <div class="bg-light text-danger p-1 rounded-5 px-2"><i
+                                            class="fa-solid fa-arrow-right"></i></div></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!-- section 3 -->
+                <div class="row mt-5 gap-4 gap-md-0">
+                    <div class="col-12 col-md-4">
+                        <div class="" style="height: 250px; width: 100%;">
+                            <img src="https://static.tossdown.com/site/6b8657b7-91ec-4e06-a06c-5cad0d70606d.webp"
+                                class="rounded-2"
+                                style="width: 100%; height: 100%; object-fit: cover; z-index: 1 !important;" alt="">
+                        </div>
+                        <div class="-my-content mt-3 text-center">
+                            <h3
+                                style="color: #ed1c24; letter-spacing: 5px; text-transform: uppercase; font-size: 14px; font-weight: 300;">
+                                Lahore</h3>
+                            <h4 class="fw-bolder" style="font-size: 25px;">Salt'n Pepper <span class="fw-light"
+                                    style="font-size: 20px;">Express</span></h4>
+                            <div class="d-flex align-items-center flex-column">
+                                <div class="d-flex gap-2 p-0 m-0 mt-2 text-center">
+                                    <i class="fa-solid fa-location-dot" style="font-size: 14px;"></i>
+                                    <p> Shop no.5, Arcade Block, Fortress Stadium, Lahore</p>
+                                </div>
+                                <div class="d-flex gap-2 p-0 m-0 text-center">
+                                    <i class="fa-solid fa-phone" style="font-size: 14px;"></i>
+                                    <p> Ph: 042-366-23-100</p>
+                                </div>
+                                <button
+                                    class="btn border-1 border-secondary py-2 px-4 mt-3 d-flex gap-2 align-items-center rounded-5">Get
+                                    Directions <div class="bg-light text-danger p-1 rounded-5 px-2"><i
+                                            class="fa-solid fa-arrow-right"></i></div></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="" style="height: 250px; width: 100%;">
+                            <img src="https://static.tossdown.com/images/bbac9f4a-2970-4bc4-b8a1-541857d96e79.webp"
+                                class="rounded-2"
+                                style="width: 100%; height: 100%; object-fit: cover; z-index: 1 !important;" alt="">
+                        </div>
+                        <div class="-my-content mt-3 text-center">
+                            <h3
+                                style="color: #ed1c24; letter-spacing: 5px; text-transform: uppercase; font-size: 14px; font-weight: 300;">
+                                Gujrat</h3>
+                            <h4 class="fw-bolder" style="font-size: 25px;">Salt'n Pepper <span class="fw-light"
+                                    style="font-size: 20px;">Express</span></h4>
+                            <div class="d-flex align-items-center flex-column">
+                                <div class="d-flex gap-2 p-0 m-0 mt-2 text-center">
+                                    <i class="fa-solid fa-location-dot" style="font-size: 14px;"></i>
+                                    <p> Service Mor, Gujrat</p>
+                                </div>
+                                <div class="d-flex gap-2 p-0 m-0 text-center">
+                                    <i class="fa-solid fa-phone" style="font-size: 14px;"></i>
+                                    <p> Ph: 0311-1124600</p>
+                                </div>
+                                <button
+                                    class="btn border-1 border-secondary py-2 px-4 mt-3 d-flex gap-2 align-items-center rounded-5">Get
+                                    Directions <div class="bg-light text-danger p-1 rounded-5 px-2"><i
+                                            class="fa-solid fa-arrow-right"></i></div></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="" style="height: 250px; width: 100%;">
+                            <img src="https://static.tossdown.com/images/114fd251-9864-44bc-9f51-0eb05781303c.webp"
+                                class="rounded-2"
+                                style="width: 100%; height: 100%; object-fit: cover; z-index: 1 !important;" alt="">
+                        </div>
+                        <div class="-my-content mt-3 text-center">
+                            <h3
+                                style="color: #ed1c24; letter-spacing: 5px; text-transform: uppercase; font-size: 14px; font-weight: 300;">
+                                Sahiwal</h3>
+                            <h4 class="fw-bolder" style="font-size: 25px;">Salt'n Pepper <span class="fw-light"
+                                    style="font-size: 20px;">Express</span></h4>
+                            <div class="d-flex align-items-center flex-column">
+                                <div class="d-flex gap-2 p-0 m-0 mt-2 text-center">
+                                    <i class="fa-solid fa-location-dot" style="font-size: 14px;"></i>
+                                    <p> Opposite Main Gate Police Line, Sahiwal</p>
+                                </div>
+                                <div class="d-flex gap-2 p-0 m-0 text-center">
+                                    <i class="fa-solid fa-phone" style="font-size: 14px;"></i>
+                                    <p> Ph: 040-4515485</p>
+                                </div>
+                                <button
+                                    class="btn border-1 border-secondary py-2 px-4 mt-3 d-flex gap-2 align-items-center rounded-5">Get
+                                    Directions <div class="bg-light text-danger p-1 rounded-5 px-2"><i
+                                            class="fa-solid fa-arrow-right"></i></div></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!-- section 4 -->
+                <div class="row mt-5 gap-4 gap-md-0">
+                    <div class="d-none d-lg-block col-12 col-md-4">
+
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="" style="height: 250px; width: 100%;">
+                            <img src="https://static.tossdown.com/images/8a2939b7-83fc-4971-b40c-72ced9dfd6f0.webp"
+                                class="rounded-2"
+                                style="width: 100%; height: 100%; object-fit: cover; z-index: 1 !important;" alt="">
+                        </div>
+                        <div class="-my-content mt-3 text-center">
+                            <h3
+                                style="color: #ed1c24; letter-spacing: 5px; text-transform: uppercase; font-size: 14px; font-weight: 300;">
+                                Burewala</h3>
+                            <h4 class="fw-bolder" style="font-size: 25px;">Salt'n Pepper <span class="fw-light"
+                                    style="font-size: 20px;">Express</span></h4>
+                            <div class="d-flex align-items-center flex-column">
+                                <div class="d-flex gap-2 p-0 m-0 mt-2 text-center">
+                                    <i class="fa-solid fa-location-dot" style="font-size: 14px;"></i>
+                                    <p> The Empire Mall, Canal Road, Burewala</p>
+                                </div>
+                                <div class="d-flex gap-2 p-0 m-0 text-center">
+                                    <i class="fa-solid fa-phone" style="font-size: 14px;"></i>
+                                    <p>Ph: 0318-4900832</p>
+                                </div>
+                                <div class="d-flex gap-2 p-0 m-0 text-center">
+                                    <i class="fa-solid fa-phone" style="font-size: 14px;"></i>
+                                    <p>Ph: 067-3205644</p>
+                                </div>
+                                <button
+                                    class="btn border-1 border-secondary py-2 px-4 mt-3 d-flex gap-2 align-items-center rounded-5">Get
+                                    Directions <div class="bg-light text-danger p-1 rounded-5 px-2"><i
+                                            class="fa-solid fa-arrow-right"></i></div></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+        <!-- Express Franchises -->
+
+        <!-- Village Franchises -->
+        <div class="container-fluid" data-bs-theme="dark">
+            <div class="row py-5 gap-4 gap-md-0">
+                <div class="col-12 col-md-6 order-2 d-flex justify-content-center flex-column">
+                    <div class="">
+                        <h3
+                            style="color: #ed1c24; letter-spacing: 5px; text-transform: uppercase; font-size: 16px; font-weight: 300;">
+                            GUJRANWALA</h3>
+                        <h4 class="fw-bolder text-light" style="font-size: 35px;">Salt'n Pepper <span class="fw-light"
+                                style="font-size: 25px;">Village</span></h4>
+                        <div class="d-flex gap-2 p-0 m-0 mt-4">
+                            <i class="fa-solid fa-location-dot text-light" style="font-size: 18px;"></i>
+                            <p> Adjacent to Rida Marquees /DHA Main Gate, GT Road Gujranwala Cantt</p>
+                        </div>
+                        <div class="d-flex gap-2 p-0 m-0">
+                            <i class="fa-solid fa-phone text-light" style="font-size: 18px;"></i>
+                            <p> Ph: 055-3884500 l ,055-3880400</p>
+                        </div>
+                        <button
+                            class="btn my-btn-outline-success border-1 py-2 px-4 mt-3 d-flex gap-2 align-items-center rounded-5">Get
+                            Directions <div class="bg-light text-success p-1 rounded-5 px-2"><i
+                                    class="fa-solid fa-arrow-right"></i></div></button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-1">
+                    <div class="" style="height: 350px; width: 100%;">
+                        <img src="https://images-beta.tossdown.com/site/0df39a08-2dca-4998-adda-4ca66b1132cb.webp"
+                            class="rounded-2" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Village Franchises -->
+
+        <!-- Express Franchises (Opening Soon) -->
+        <div style="padding: 80px 0px; background-color: #0f0f0f;">
+            <div class="container">
+                <!-- content -->
+                <div
+                    class="position-relative text-light d-flex justify-content-center text-center flex-column align-items-center gap-1 mb-4">
+                    <h1 class="fw-medium mx-auto" style=""><span
+                            style="font-family: 'futurak'; font-weight: 900; font-size: 52px; line-height: 62px;">
+                            Salt'n Pepper <br>
+                        </span>
+                        Express Franchises <span style="font-size: 23px;">(Opening Soon)</span>
+                    </h1>
+                </div>
+                <!-- content -->
+                <div class="row mt-3 ">
+                    <div class="col-12 col-md-4 mt-4 mt-md-0">
+                        <div class="bg-light p-4 rounded d-flex flex-column align-items-center gap-2 justify-content-center "
+                            style="height: 250px;">
+                            <div class="my-image">
+                                <img src="https://static.tossdown.com/images/d837768e-a445-459c-9eb9-f3026c3a821c.webp"
+                                    alt="">
+                            </div>
+                            <div class="my-content text-center">
+                                <h5
+                                    style="color: #ed1c24; font-size: 10px; text-transform: uppercase; letter-spacing: 5px;">
+                                    Opening Soon</h5>
+                                <h3 class="fw-bolder">Salt'n Pepper <span class="fw-light"
+                                        style="font-size: 20px;">Express</span></h3>
+                                <h4>Blue World City
+                                    <br>
+                                    Rawalpindi
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mt-4 mt-md-0">
+                        <div class="bg-light p-4 rounded d-flex flex-column align-items-center gap-2 justify-content-center "
+                            style="height: 250px;">
+                            <div class="my-image">
+                                <img src="https://static.tossdown.com/images/d837768e-a445-459c-9eb9-f3026c3a821c.webp"
+                                    alt="">
+                            </div>
+                            <div class="my-content text-center">
+                                <h5
+                                    style="color: #ed1c24; font-size: 10px; text-transform: uppercase; letter-spacing: 5px;">
+                                    Opening Soon</h5>
+                                <h3 class="fw-bolder">Salt'n Pepper <span class="fw-light"
+                                        style="font-size: 20px;">Express</span></h3>
+                                <h4>Al-Jalil Garden
+                                    <br>
+                                    Sharqpur
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mt-4 mt-md-0">
+                        <div class="bg-light p-4 rounded d-flex flex-column align-items-center gap-2 justify-content-center "
+                            style="height: 250px;">
+                            <div class="my-image">
+                                <img src="https://static.tossdown.com/images/d837768e-a445-459c-9eb9-f3026c3a821c.webp"
+                                    alt="">
+                            </div>
+                            <div class="my-content text-center">
+                                <h5
+                                    style="color: #ed1c24; font-size: 10px; text-transform: uppercase; letter-spacing: 5px;">
+                                    Opening Soon</h5>
+                                <h3 class="fw-bolder">Salt'n Pepper <span class="fw-light"
+                                        style="font-size: 20px;">Express</span></h3>
+                                <h4>Al-Jalil Garden
+                                    <br>
+                                    Sadhoke
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4  mt-4">
+                        <div class="bg-light p-4 rounded d-flex flex-column align-items-center gap-2 justify-content-center"
+                            style="height: 250px;">
+                            <div class="my-image">
+                                <img src="https://static.tossdown.com/images/d837768e-a445-459c-9eb9-f3026c3a821c.webp"
+                                    alt="">
+                            </div>
+                            <div class="my-content text-center">
+                                <h5
+                                    style="color: #ed1c24; font-size: 10px; text-transform: uppercase; letter-spacing: 5px;">
+                                    Opening Soon</h5>
+                                <h3 class="fw-bolder">Salt'n Pepper <span class="fw-light"
+                                        style="font-size: 20px;">Express</span></h3>
+                                <h4>Al-Jalil Garden
+                                    <br>
+                                    Sheikhupura
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4  mt-4">
+                        <div class="bg-light p-4 rounded d-flex flex-column align-items-center gap-2 justify-content-center"
+                            style="height: 250px;">
+                            <div class="my-image">
+                                <img src="https://static.tossdown.com/images/d837768e-a445-459c-9eb9-f3026c3a821c.webp"
+                                    alt="">
+                            </div>
+                            <div class="my-content text-center">
+                                <h5
+                                    style="color: #ed1c24; font-size: 10px; text-transform: uppercase; letter-spacing: 5px;">
+                                    Opening Soon</h5>
+                                <h3 class="fw-bolder">Salt'n Pepper <span class="fw-light"
+                                        style="font-size: 20px;">Express</span></h3>
+                                <h4>Okara
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4  mt-4">
+                        <div class="bg-light p-4 rounded d-flex flex-column align-items-center gap-2 justify-content-center"
+                            style="height: 250px;">
+                            <div class="my-image">
+                                <img src="https://static.tossdown.com/images/d837768e-a445-459c-9eb9-f3026c3a821c.webp"
+                                    alt="">
+                            </div>
+                            <div class="my-content text-center">
+                                <h5
+                                    style="color: #ed1c24; font-size: 10px; text-transform: uppercase; letter-spacing: 5px;">
+                                    Opening Soon</h5>
+                                <h3 class="fw-bolder">Salt'n Pepper <span class="fw-light"
+                                        style="font-size: 20px;">Express</span></h3>
+                                <h4>Blue World City
+                                    <br>
+                                    RawalpiKharianndi
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Express Franchises (Opening Soon) -->
+
+        <!-- footer -->
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-muted" style="background-color: #0a0a0a;">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between">
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <img src="https://static.tossdown.com/images/da52b9b3-ba03-4d41-bc8f-ac9e7d6a598b.webp"
+                                    height="70" alt="">
+                            </h6>
+                            <p>
+                                The Salt’n Pepper Restaurants are an example of gracious dinning, outstanding service,
+                                extraordinary classic and contemporary cuisine. The restaurants have become the ultimate
+                                dinning destinations in Lahore. From family occasions to business dinner and moments of
+                                the heart, this place is where unforgettable memories are made.
+                            </p>
+                            <div class="d-flex gap-4">
+                                <p>Terms & conditions</p>
+                                <p>Privacy policy</p>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Site Links
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Home</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">About Us</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Publications</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Get a Franchise</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Feedback</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Contact us</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Contact Us
+                            </h6>
+                            <p style="font-size: 14px;">
+                                <a href="#!" class="text-reset fw-bolder" style="color: white;">Head office Address</a>
+                                <br>
+                                Foodconsults (Pvt) Ltd 23-Usman Block, New GardenTown, Lahore, Pakistan
+                            </p>
+
+                            <p style="font-size: 14px;">
+                                <a href="#!" class="text-reset fw-bolder" style="color: white;">Head office number</a>
+                                <br>
+                                +92 42 358 509 31
+                                <br>
+                                +92 42 358 509 30
+                            </p>
+
+                            <p style="font-size: 14px;">
+                                <a href="#!" class="text-reset fw-bolder" style="color: white;">Email Address</a>
+                                <br>
+                                snpfood@brain.net.pk
+                            </p>
+
+                            <p style="font-size: 14px;">
+                                <a href="#!" class="text-reset fw-bolder" style="color: white;">Free delivery number</a>
+                                <br>
+                                +92 42 111 100 678
+                                <br>
+                                +92 03 111 444 610
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 d-flex flex-column align-items-md-start mt-5 mt-md-0 align-items-center">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Follow Us</h6>
+                            <div
+                                style="font-size: 18px; display: flex; align-items: center; justify-content: start; gap: 8px; margin-bottom: 25px;">
+                                <div
+                                    style="background-color: #ed1c24; color: white; padding: 8px; border-radius: 50px; ">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div
+                                    style="background-color: #ed1c24; color: white; padding: 8px; border-radius: 50px;">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <div
+                                    style="background-color: #ed1c24; color: white; padding: 8px; border-radius: 50px;">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-3 w-50">
+                                <img src="https://static.tossdown.com/images/15a204d9-9623-4aea-8c7a-a4419417ee7e.webp"
+                                    alt="">
+                                <img src="https://static.tossdown.com/images/c5c0daad-373c-4dd5-a8e8-6dcbbd142963.webp"
+                                    alt="">
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="" style="background-color: rgba(0, 0, 0, 0.548);">
+                <div class="container p-4 d-flex justify-content-between ">
+                    © 2025 Snp Main
+                    <a class="text-reset fw-bold" href="https://thetalhadev.rf.gd/">Powered by thetalhadev</a>
+                </div>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+        <!-- footer -->
+
+    </div>
+    <!-- Main -->
+
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
